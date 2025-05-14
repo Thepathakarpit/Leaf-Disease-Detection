@@ -54,7 +54,7 @@ class LeafDiseaseChecker:
         return res
 
 if __name__=='__main__':
-    chk = LeafDiseaseChecker(r'C:\Users\patha\Downloads\Leaf detection model\final_model.h5', idx_path=r'C:\Users\patha\Downloads\Leaf detection model\class_indices.json',
-                              auto_dir='/content/New Plant Diseases Dataset(Augmented)/New Plant Diseases Dataset(Augmented)/train')
-    print(chk.predict(r'C:\Users\patha\Downloads\Leaf detection model\archive\test\test\PotatoEarlyBlight4.JPG'))
+    chk = LeafDiseaseChecker(r'final_model.h5', idx_path=r'class_indices.json',
+                              auto_dir='New Plant Diseases Dataset(Augmented)/New Plant Diseases Dataset(Augmented)/train')
+    print(chk.predict(r'test\test\AppleCedarRust3.JPG'))
     # chk.batch(r'C:\Users\patha\Downloads\Leaf detection model\New Plant Diseases Dataset(Augmented)\New Plant Diseases Dataset(Augmented)\train\Tomato___Bacterial_spot')
